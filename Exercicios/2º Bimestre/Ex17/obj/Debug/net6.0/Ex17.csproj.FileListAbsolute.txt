@@ -1,0 +1,15 @@
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\bin\Debug\net6.0\Ex17.exe
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\bin\Debug\net6.0\Ex17.deps.json
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\bin\Debug\net6.0\Ex17.runtimeconfig.json
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\bin\Debug\net6.0\Ex17.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\bin\Debug\net6.0\Ex17.pdb
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\obj\Debug\net6.0\Ex17.csproj.AssemblyReference.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\obj\Debug\net6.0\Ex17.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\obj\Debug\net6.0\Ex17.AssemblyInfoInputs.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\obj\Debug\net6.0\Ex17.AssemblyInfo.cs
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\obj\Debug\net6.0\Ex17.csproj.CoreCompileInputs.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\obj\Debug\net6.0\Ex17.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\obj\Debug\net6.0\refint\Ex17.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\obj\Debug\net6.0\Ex17.pdb
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\obj\Debug\net6.0\Ex17.genruntimeconfig.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\2º Bimestre\Ex17\obj\Debug\net6.0\ref\Ex17.dll

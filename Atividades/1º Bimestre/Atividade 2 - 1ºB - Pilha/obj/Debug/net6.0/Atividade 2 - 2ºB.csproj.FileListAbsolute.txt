@@ -1,0 +1,30 @@
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\bin\Debug\net6.0\Atividade 2 - 2ºB.exe
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\bin\Debug\net6.0\Atividade 2 - 2ºB.deps.json
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\bin\Debug\net6.0\Atividade 2 - 2ºB.runtimeconfig.json
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\bin\Debug\net6.0\Atividade 2 - 2ºB.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\bin\Debug\net6.0\Atividade 2 - 2ºB.pdb
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\obj\Debug\net6.0\Atividade 2 - 2ºB.csproj.AssemblyReference.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\obj\Debug\net6.0\Atividade 2 - 2ºB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\obj\Debug\net6.0\Atividade 2 - 2ºB.AssemblyInfoInputs.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\obj\Debug\net6.0\Atividade 2 - 2ºB.AssemblyInfo.cs
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\obj\Debug\net6.0\Atividade 2 - 2ºB.csproj.CoreCompileInputs.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\obj\Debug\net6.0\Atividade 2 - 2ºB.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\obj\Debug\net6.0\refint\Atividade 2 - 2ºB.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\obj\Debug\net6.0\Atividade 2 - 2ºB.pdb
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\obj\Debug\net6.0\Atividade 2 - 2ºB.genruntimeconfig.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 2ºB\obj\Debug\net6.0\ref\Atividade 2 - 2ºB.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\bin\Debug\net6.0\Atividade 2 - 2ºB.exe
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\bin\Debug\net6.0\Atividade 2 - 2ºB.deps.json
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\bin\Debug\net6.0\Atividade 2 - 2ºB.runtimeconfig.json
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\bin\Debug\net6.0\Atividade 2 - 2ºB.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\bin\Debug\net6.0\Atividade 2 - 2ºB.pdb
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\obj\Debug\net6.0\Atividade 2 - 2ºB.csproj.AssemblyReference.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\obj\Debug\net6.0\Atividade 2 - 2ºB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\obj\Debug\net6.0\Atividade 2 - 2ºB.AssemblyInfoInputs.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\obj\Debug\net6.0\Atividade 2 - 2ºB.AssemblyInfo.cs
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\obj\Debug\net6.0\Atividade 2 - 2ºB.csproj.CoreCompileInputs.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\obj\Debug\net6.0\Atividade 2 - 2ºB.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\obj\Debug\net6.0\refint\Atividade 2 - 2ºB.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\obj\Debug\net6.0\Atividade 2 - 2ºB.pdb
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\obj\Debug\net6.0\Atividade 2 - 2ºB.genruntimeconfig.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Atividades\Atividade 2 - 1ºB - Lista Linear Sequencial - Pilha\obj\Debug\net6.0\ref\Atividade 2 - 2ºB.dll

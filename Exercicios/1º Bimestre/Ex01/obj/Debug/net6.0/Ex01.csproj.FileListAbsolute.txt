@@ -1,0 +1,30 @@
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\bin\Debug\net6.0\Ex01.exe
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\bin\Debug\net6.0\Ex01.deps.json
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\bin\Debug\net6.0\Ex01.runtimeconfig.json
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\bin\Debug\net6.0\Ex01.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\bin\Debug\net6.0\Ex01.pdb
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.csproj.AssemblyReference.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.AssemblyInfoInputs.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.AssemblyInfo.cs
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.csproj.CoreCompileInputs.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\refint\Ex01.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.pdb
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.genruntimeconfig.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\Analise e desenvolvimento de Sistemas - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\ref\Ex01.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\bin\Debug\net6.0\Ex01.exe
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\bin\Debug\net6.0\Ex01.deps.json
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\bin\Debug\net6.0\Ex01.runtimeconfig.json
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\bin\Debug\net6.0\Ex01.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\bin\Debug\net6.0\Ex01.pdb
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.csproj.AssemblyReference.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.AssemblyInfoInputs.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.AssemblyInfo.cs
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.csproj.CoreCompileInputs.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\refint\Ex01.dll
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.pdb
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\Ex01.genruntimeconfig.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\ADS - Fatec\3º Termo - 2º sem. 2022\Estruturas de Dados\Exercicios\Ex01\obj\Debug\net6.0\ref\Ex01.dll
