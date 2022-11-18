@@ -7,6 +7,44 @@ d) Exibir todos os valores da árvore em ordem, pré ordem ou pós ordem*/
 
 
 
+void Insere(ref tp_no raiz, int valor)
+{
+   if (raiz == null)
+   {
+      raiz = new tp_no();
+      raiz.valor = valor;
+   }
+   else if (valor < raiz.valor)
+      Insere(ref raiz.esq, valor);
+   else
+      Insere(ref raiz.dir, valor);
+}
+
+tp_no Busca(tp_no raiz, int valor)
+{
+   if (raiz == null)
+      return null;
+   else if (valor == raiz.valor)
+      return raiz;
+   else if (valor < raiz.valor)
+      return Busca(raiz.esq, valor);
+   else
+      return Busca(raiz.dir, valor);
+}
+
+tp_no RetornaMaior(ref tp_no r)
+{
+   if (r.dir == null)
+   {
+      tp_no p = r;
+      r = r.esq;
+      return p;
+   }
+   else
+      return RetornaMaior(ref r.dir);
+}
+
+
 
 int Menu()
 {
