@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Atividades/1º Bimestre/Atividade 2 - 1ºB - Pilha/Atividade 2 - 2ºB.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/Atividades/1º Bimestre/Atividade 2 - 1ºB - Pilha/Atividade 2 - 2ºB.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/Atividades/1º Bimestre/Atividade 2 - 1ºB - Pilha/Atividade 2 - 2ºB.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
