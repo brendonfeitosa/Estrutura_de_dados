@@ -4,6 +4,30 @@ b) Pesquisar um valor digitado pelo usuário. Exiba uma mensagem informando se e
 c) Remover um valor digitado pelo usuário. Exiba a mensagem se removido com sucesso ou não encontrado
 d) Exibir todos os valores da árvore em ordem, pré ordem ou pós ordem*/
 
+tp_no raiz = null;
+Console.Clear();
+while(true)
+{
+   int op = Menu();
+   if(op == 1)
+   {
+      Console.WriteLine("************************ INSERINDO ************************");
+      Console.Write("\nDigite um valor para ser incluído na árvore: ");
+      int valor = Convert.ToInt32(Console.ReadLine());
+      Insere(ref raiz, valor);
+      Console.WriteLine("");
+   }
+
+   else if(op == 2)
+   {
+      Console.WriteLine("************************ PESQUISAR ************************");
+      Console.Write("\nDigite o valor que deseja encontrar: ");
+      int pesq = int.Parse(Console.ReadLine());
+      Console.WriteLine(Busca(ref raiz, pesq));
+   }
+}
+
+
 void Insere(ref tp_no raiz, int valor)
 {
    if (raiz == null)
@@ -108,7 +132,6 @@ int Menu()
     Console.WriteLine("\n------------------------------------------------------------------\n");
     return opcao;
 }
-tp_no raiz = null;
 
 class tp_no
 {
