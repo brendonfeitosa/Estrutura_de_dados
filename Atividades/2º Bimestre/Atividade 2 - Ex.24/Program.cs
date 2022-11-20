@@ -22,8 +22,16 @@ while(true)
    {
       Console.WriteLine("************************ PESQUISAR ************************");
       Console.Write("\nDigite o valor que deseja encontrar: ");
-      int pesq = int.Parse(Console.ReadLine());
-      Console.WriteLine(Busca(ref raiz, pesq));
+      int valor_pesq = int.Parse(Console.ReadLine());
+      Busca(raiz, valor_pesq);
+      if(valor_pesq == raiz.valor || valor_pesq == raiz.esq.valor || valor_pesq == raiz.dir.valor)
+      {
+         Console.WriteLine("Valor encontrado!");
+      }
+      else
+      {
+         Console.WriteLine("Valor não encontrado");
+      }
    }
 }
 
@@ -43,14 +51,14 @@ void Insere(ref tp_no raiz, int valor)
 
 tp_no Busca(tp_no raiz, int valor)
 {
-   if (raiz == null)
-      return null;
-   else if (valor == raiz.valor)
-      return raiz;
-   else if (valor < raiz.valor)
-      return Busca(raiz.esq, valor);
-   else
-      return Busca(raiz.dir, valor);
+      if (raiz == null)
+         return null;
+      else if (valor == raiz.valor)
+         return raiz;
+      else if (valor < raiz.valor)
+         return Busca(raiz.esq, valor);
+      else
+         return Busca(raiz.dir, valor);
 }
 
 tp_no RetornaMaior(ref tp_no raiz)
@@ -139,7 +147,3 @@ class tp_no
    public int valor;
    public tp_no dir;
 }
-
-
-
-
