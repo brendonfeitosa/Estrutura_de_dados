@@ -23,6 +23,9 @@ while(true)
       Console.WriteLine("************************ PESQUISAR ************************");
       Console.Write("\nDigite o valor que deseja encontrar: ");
       int valor_pesq = int.Parse(Console.ReadLine());
+      Thread.Sleep(500);
+      Console.WriteLine("\nPesquisando...");
+      Thread.Sleep(1000);
       Busca(raiz, valor_pesq);
       if(valor_pesq == raiz.valor || valor_pesq == raiz.esq.valor || valor_pesq == raiz.dir.valor)
       {
@@ -38,12 +41,15 @@ while(true)
       Console.WriteLine("************************ REMOVER ************************");
       Console.Write("\nDigite o valor que deseja remover: ");
       int valor_remov = int.Parse(Console.ReadLine());
+      Thread.Sleep(1000);
+      Console.WriteLine("\nPesquisando...");
       Busca(raiz, valor_remov);
       if(valor_remov == raiz.valor || valor_remov == raiz.esq.valor || valor_remov == raiz.dir.valor)
       {
          Console.WriteLine("\nValor encontrado!");
          Remove(ref raiz, valor_remov);
-         Thread.Sleep(1500);
+         Console.WriteLine("\nRemovendo...");
+         Thread.Sleep(1000);
          Console.WriteLine("\nO valor informado foi removido com sucesso!\n");
       }
       else
