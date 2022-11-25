@@ -17,12 +17,38 @@ while(true)
         string nome = Console.ReadLine();
         Console.Write("Digite o e-mail: ");
         string email = Console.ReadLine();
-        InsereLinead(vetor, nota, nome, email, ref qtd_colisoes);
+        InsereLinear(vetor, nota, nome, email, ref qtd_colisoes);
         Console.WriteLine("");
+    }
+    else if(op == 2)
+    {
+        Console.WriteLine("************************ RECUPERAR ************************");
+        Console.Write("\nDigite a nota que quer consultar: ");
+        int nota = Convert.ToInt32(Console.ReadLine());
+        int posicao = RecuperarLinear(vetor, nota);
+        if(posicao == -1)
+        {
+            Console.WriteLine("\nNota não encontrada!");
+        }
+        else
+        {
+            Console.WriteLine($"\nPara nota [{vetor[nota].nota}], encontramos o nome [{vetor[nota].nome}] e o e-mail [{vetor[nota].email}]\n");
+        }
+    }
+    else if(op == 3)
+    {
+        Console.WriteLine($"A quantidade de colisões foi [{qtd_colisoes}]\n");
+    }
+    else if(op == 4)
+    {
+      Console.WriteLine("Saindo...");
+      Thread.Sleep(500);
+      Console.WriteLine("Fim do programa!");
+      break;
     }
 }
 
-void InsereLinead(tipo_no[] vetor, int nota, string nome, string email, ref int qtd_colisoes)
+void InsereLinear(tipo_no[] vetor, int nota, string nome, string email, ref int qtd_colisoes)
 {
     int posicao = Hash(nota);
     while(vetor[posicao] != null)
@@ -42,18 +68,32 @@ int Hash(int nota)
     return nota % N;
 }
 
-
-
-
-
+int RecuperarLinear(tipo_no[] vetor, int nota)
+{
+    int qtd_verificar = 0;
+    int posicao = Hash(nota);
+    while((vetor[posicao] == null || vetor[posicao].nota != nota) && qtd_verificar < N)
+    {
+        posicao ++;
+        posicao = posicao % N;
+    }
+    if(qtd_verificar < N)
+    {
+        return posicao;
+    }
+    else
+    {
+        return -1;
+    }
+}
 
 int Menu()
 {
     int opcao = 0;
     Console.WriteLine("---------------------------MENU PRINCIPAL---------------------------\n");
     Console.WriteLine("[1] Inserir");
-    Console.WriteLine("[2] Recuperar");
-    Console.WriteLine("[3] Informar");
+    Console.WriteLine("[2] Exibir resultados");
+    Console.WriteLine("[3] Quantidade de colisões");
     Console.WriteLine("[4] Sair!");
     Console.Write("\nDigite a opção desejada: ");
     opcao = Convert.ToInt32(Console.ReadLine());
