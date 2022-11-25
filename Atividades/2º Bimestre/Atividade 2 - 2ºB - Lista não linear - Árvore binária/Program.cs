@@ -44,7 +44,7 @@ while(true)
       Thread.Sleep(1000);
       Console.WriteLine("\nPesquisando...");
       Busca(raiz, valor_remov);
-      if(valor_remov == raiz.valor || valor_remov == raiz.esq.valor || valor_remov == raiz.dir.valor)
+      if(Busca(raiz, valor_remov) != null)
       {
          Console.WriteLine("\nValor encontrado!");
          Remove(ref raiz, valor_remov);

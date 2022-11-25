@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Brendon_Feitosa\\OneDrive\\Documentos\\1. ADS - Fatec\\3º Termo - 2º sem. 2022\\Estrutura_de_dados\\Atividades\\2º Bimestre\\Atividade 2 - Ex.24\\Atividade 2 - Ex.24.csproj",
+      "projectUniqueName": "C:\\Users\\Brendon_Feitosa\\OneDrive\\Documentos\\1. ADS - Fatec\\3º Termo - 2º sem. 2022\\Estrutura_de_dados\\Atividades\\2º Bimestre\\Atividade 2 - 2ºB - Lista não linear - Árvore binária\\Atividade 2 - Ex.24.csproj",
       "projectName": "Atividade 2 - Ex.24",
-      "projectPath": "C:\\Users\\Brendon_Feitosa\\OneDrive\\Documentos\\1. ADS - Fatec\\3º Termo - 2º sem. 2022\\Estrutura_de_dados\\Atividades\\2º Bimestre\\Atividade 2 - Ex.24\\Atividade 2 - Ex.24.csproj",
+      "projectPath": "C:\\Users\\Brendon_Feitosa\\OneDrive\\Documentos\\1. ADS - Fatec\\3º Termo - 2º sem. 2022\\Estrutura_de_dados\\Atividades\\2º Bimestre\\Atividade 2 - 2ºB - Lista não linear - Árvore binária\\Atividade 2 - Ex.24.csproj",
       "packagesPath": "C:\\Users\\Brendon_Feitosa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Brendon_Feitosa\\OneDrive\\Documentos\\1. ADS - Fatec\\3º Termo - 2º sem. 2022\\Estrutura_de_dados\\Atividades\\2º Bimestre\\Atividade 2 - Ex.24\\obj\\",
+      "outputPath": "C:\\Users\\Brendon_Feitosa\\OneDrive\\Documentos\\1. ADS - Fatec\\3º Termo - 2º sem. 2022\\Estrutura_de_dados\\Atividades\\2º Bimestre\\Atividade 2 - 2ºB - Lista não linear - Árvore binária\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
