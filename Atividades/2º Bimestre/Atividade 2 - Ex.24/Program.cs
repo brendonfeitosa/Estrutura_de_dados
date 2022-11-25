@@ -26,8 +26,8 @@ while(true)
       Thread.Sleep(500);
       Console.WriteLine("\nPesquisando...");
       Thread.Sleep(1000);
-      Busca(raiz, valor_pesq);
-      if(valor_pesq == raiz.valor || valor_pesq == raiz.esq.valor || valor_pesq == raiz.dir.valor)
+      
+      if(Busca(raiz, valor_pesq) != null)
       {
          Console.WriteLine("\nValor encontrado!\n");
       }
