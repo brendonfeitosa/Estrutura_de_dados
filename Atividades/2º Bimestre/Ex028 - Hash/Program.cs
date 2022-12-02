@@ -30,7 +30,7 @@ while(true)
                 string nome = Console.ReadLine();
                 Console.Write("Digite o whats: ");
                 int whats = Convert.ToInt32(Console.ReadLine());
-                InserirLinear(vetor, idade, nome, whats);
+                InserirLinear(vetor, idade, nome, whats, ref qtd_colisoes);
                 Console.WriteLine("");
             }
             else if(op2 == 3)
@@ -52,9 +52,17 @@ while(true)
             else if(op2 == 2)
             {
                 Console.Write("Digite a chave(idade) que deseja alterar: ");
-                int idade_alterar = (Convert.ToInt32(Console.ReadLine()));
-                //terminar
-                Console.WriteLine("");
+                int idade_consultar = (Convert.ToInt32(Console.ReadLine()));
+                int idade_alterar = ConsultarLinear(vetor, idade_consultar);
+                if(idade_alterar == -1)
+                {
+                    Console.WriteLine("Idade não encontrada!");
+                }
+                else
+                {
+                    Console.WriteLine($"A chave digitada foi [{vetor[idade_consultar].idade}], para ela temos os seguintes dados: nome [{vetor[idade_consultar].nome}] e Whats [{vetor[idade_consultar].whats}]");
+                }
+                Console.WriteLine(""); //fazer a alteração, preciso de uma função especifica
             }
             else if(op2 == 3)
             {
@@ -64,7 +72,23 @@ while(true)
     }
     else if(op == 3)
     {
-
+        Console.WriteLine("************************ RELATAR COLISÕES ************************\n");
+        int op2 = Menu_Colisoes();
+         while(op2 != 4)
+        {
+            if(op2 == 1)
+            {
+                Console.WriteLine("Neste caso não houveram colisões");
+            }
+            else if(op2 == 2)
+            {
+                Console.WriteLine($"A quantidade de colisões para o tratamento linear de foi [{qtd_colisoes}]\n");
+            }
+            else if(op2 == 3)
+            {
+                //lista encadeada
+            }
+        }       
     }
     else if(op == 4)
     {
@@ -78,7 +102,7 @@ while(true)
 
 
 
-void InserirLinear(Tipo_no[] vetor, int idade, string nome, int whats)
+void InserirLinear(Tipo_no[] vetor, int idade, string nome, int whats, ref int qtd_colisoes)
 {
     int posicao = Hash(idade);
     while(vetor[posicao] != null)
@@ -93,10 +117,26 @@ void InserirLinear(Tipo_no[] vetor, int idade, string nome, int whats)
     vetor[posicao].whats = whats;
 }
 
-void Consultar_Linear(Tipo_no[]vetor, int idade)
+int ConsultarLinear(Tipo_no[]vetor, int idade)
 {
- // terminar
+    int qtd_verificar = 0;
+    int posicao = Hash(idade);
+    while((vetor[posicao] == null || vetor[posicao].idade != idade) && qtd_verificar < V)
+    {
+        posicao ++;
+        posicao = posicao % V;
+    }
+    if(qtd_verificar < V)
+    {
+        return posicao;
+    }
+    else
+    {
+        return -1;
+    }
 }
+
+int AlterarLinear()
 
 
 
