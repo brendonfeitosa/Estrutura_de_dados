@@ -1,0 +1,5 @@
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\1. ADS - Fatec\3º Termo - 2º sem. 2022\Estrutura_de_dados\Atividades\2º Bimestre\Ex028 - Hash\obj\Debug\net6.0\Ex028 - Hash.csproj.AssemblyReference.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\1. ADS - Fatec\3º Termo - 2º sem. 2022\Estrutura_de_dados\Atividades\2º Bimestre\Ex028 - Hash\obj\Debug\net6.0\Ex028 - Hash.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\1. ADS - Fatec\3º Termo - 2º sem. 2022\Estrutura_de_dados\Atividades\2º Bimestre\Ex028 - Hash\obj\Debug\net6.0\Ex028 - Hash.AssemblyInfoInputs.cache
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\1. ADS - Fatec\3º Termo - 2º sem. 2022\Estrutura_de_dados\Atividades\2º Bimestre\Ex028 - Hash\obj\Debug\net6.0\Ex028 - Hash.AssemblyInfo.cs
+C:\Users\Brendon_Feitosa\OneDrive\Documentos\1. ADS - Fatec\3º Termo - 2º sem. 2022\Estrutura_de_dados\Atividades\2º Bimestre\Ex028 - Hash\obj\Debug\net6.0\Ex028 - Hash.csproj.CoreCompileInputs.cache

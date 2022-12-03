@@ -52,15 +52,15 @@ while(true)
             else if(op2 == 2)
             {
                 Console.Write("Digite a chave(idade) que deseja alterar: ");
-                int idade_consultar = (Convert.ToInt32(Console.ReadLine()));
-                int idade_alterar = ConsultarLinear(vetor, idade_consultar);
+                int idade_alterar = (Convert.ToInt32(Console.ReadLine()));
+                ConsultarLinear(vetor, idade_alterar);
                 if(idade_alterar == -1)
                 {
                     Console.WriteLine("Idade não encontrada!");
                 }
                 else
                 {
-                    Console.WriteLine($"A chave digitada foi [{vetor[idade_consultar].idade}], para ela temos os seguintes dados: nome [{vetor[idade_consultar].nome}] e Whats [{vetor[idade_consultar].whats}]");
+                    Console.WriteLine($"A chave digitada foi [{vetor[idade_alterar].idade}], para ela temos os seguintes dados: nome [{vetor[idade_alterar].nome}] e Whats [{vetor[idade_alterar].whats}]");
                 }
                 Console.WriteLine(""); //fazer a alteração, preciso de uma função especifica
             }
@@ -136,8 +136,10 @@ int ConsultarLinear(Tipo_no[]vetor, int idade)
     }
 }
 
-int AlterarLinear()
-
+int AlterarLinear(Tipo_no[] vetor, ref int idade)
+{
+    int consulta = ConsultarLinear(vetor, idade);
+}
 
 
 int Hash(int idade)
