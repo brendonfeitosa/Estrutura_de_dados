@@ -137,14 +137,17 @@ void InserirLinear(Tipo_no[] vetor, int idade, string nome, int whats)
 void InserirEncadeada(Tipo_no[] vetor, int idade, string nome, int whats)
 {
     int posicao = Hash(idade);
-    Tipo_no auxiliar = vetor[posicao];
-    if(vetor[posicao] != null)
+    if(posicao != -1)
     {
-        vetor[posicao] = new Tipo_no();
-        vetor[posicao].idade = idade;
-        vetor[posicao].nome = nome;
-        vetor[posicao].whats = whats;
-        vetor[posicao].proximo = auxiliar;
+        Tipo_no no = new Tipo_no();
+        no.idade = idade;
+        no.nome = nome;
+        no.whats = whats;
+        if(vetor[posicao] != null)
+        {
+            no.proximo = vetor[posicao];
+        }
+        vetor[posicao] = no;
     }
 }
 
@@ -298,6 +301,7 @@ void ExibirLinear(Tipo_no[] vetor)
         Console.WriteLine("Nenhum valor encontrado!");
     }   
 }
+
 void ExibirEncadeada(Tipo_no[] vetor)
 {
     Console.WriteLine("\n****************** EXIBIÇÃO DE TODOS OS REGISTROS ******************\n");
@@ -344,7 +348,7 @@ int Menu_Tratamento()
     Console.WriteLine("[1] Sem tratamento de colisão");
     Console.WriteLine("[2] Tratamento de colisão Linear");
     Console.WriteLine("[3] Tratamento de colisão com Lista Encadeada");
-    Console.WriteLine("[4] Sair das funções de tratamento");
+    Console.WriteLine("[4] Voltar ao menu anterior");
     Console.Write("\nDigite a opção desejada: ");
     opcao = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine("\n------------------------------------------------------------------\n");
