@@ -307,22 +307,21 @@ void ExibirLinear(Tipo_no[] vetor)
 void ExibirEncadeada(Tipo_no[] vetor)
 {
     Console.WriteLine("\n****************** EXIBIÇÃO DE TODOS OS REGISTROS ******************\n");
-    int posicao = 0;
-    int idade = vetor[posicao].idade;
-    int pos = Hash(idade);
-    Tipo_no auxiliar = vetor[pos];
+    int contador = 0;
+    Tipo_no auxiliar = vetor[contador];
     if(auxiliar != null)
     {
-        while(auxiliar != null)
+        while(auxiliar != null && contador < 5)
         {
-            Console.WriteLine($"Para idade: [{auxiliar.idade}], para ela temos os seguintes dados: nome [{auxiliar.nome}] e Whats [{auxiliar.whats}]");
+            Console.WriteLine($"Para idade: [{auxiliar.idade}], temos os seguintes dados: Nome [{auxiliar.nome}] e Whats [{auxiliar.whats}]\n");
+            contador ++;
             auxiliar = auxiliar.proximo;
         }
     }
     else
     {
-        Console.WriteLine("Não existem valores a serem exibidos [LISTA VAZIA]!\n");
-    } //fazer igual ex de lista encadeada
+        Console.WriteLine("Nenhum valor encontrado!");
+    }
 }
 
 int Hash(int idade)
