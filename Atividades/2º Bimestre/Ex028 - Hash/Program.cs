@@ -11,8 +11,7 @@ const int VST = 5;
 const int VE = 5;
 Tipo_no[] vetor_linear = new Tipo_no[VL];
 Tipo_no[] vetor_s_tratamento = new Tipo_no[VST];
-Tipo_no[] vetor_encadeado = new Tipo_no[VE];
-int qtd_colisoes = 0;
+Tipo_no[] vetor_encadeada = new Tipo_no[VE];
 
 while(true)
 {
@@ -54,7 +53,7 @@ while(true)
                 string nome = Console.ReadLine();
                 Console.Write("Digite o whats: ");
                 int whats = Convert.ToInt32(Console.ReadLine());
-                InserirEncadeada(vetor_linear, idade, nome, whats);
+                InserirEncadeada(vetor_encadeada, idade, nome, whats);
                 Console.WriteLine("");
             }
         }
@@ -67,21 +66,19 @@ while(true)
         {
             if(op2 == 1)
             {
-                Console.Write("Digite a chave(idade) que deseja alterar: ");
-                int idade_alterar = (Convert.ToInt32(Console.ReadLine()));
-                AlterarSTratamento(ref vetor_s_tratamento, idade_alterar);
+                AlterarSTratamento(ref vetor_s_tratamento);
                 Console.WriteLine("");          
             }
             else if(op2 == 2)
             {
-                Console.Write("Digite a chave(idade) que deseja alterar: ");
-                int idade_alterar = (Convert.ToInt32(Console.ReadLine()));
-                AlterarLinear(ref vetor_linear, idade_alterar);
+                AlterarLinear(ref vetor_linear);
                 Console.WriteLine(""); 
             }
             else if(op2 == 3)
             {
-                //lista encadeada
+                AlterarEncadeada(ref vetor_encadeada);
+                Console.WriteLine("");          
+
             }
         }       
     }
@@ -101,7 +98,7 @@ while(true)
             }
             else if(op2 == 3)
             {
-                //lista encadeada
+                ExibirEncadeada(vetor_encadeada);
             }
         }       
     }
@@ -140,9 +137,14 @@ void InserirLinear(Tipo_no[] vetor, int idade, string nome, int whats)
 void InserirEncadeada(Tipo_no[] vetor, int idade, string nome, int whats)
 {
     int posicao = Hash(idade);
-    while(vetor[posicao] != null)
+    Tipo_no auxiliar = vetor[posicao];
+    if(vetor[posicao] != null)
     {
-
+        vetor[posicao] = new Tipo_no();
+        vetor[posicao].idade = idade;
+        vetor[posicao].nome = nome;
+        vetor[posicao].whats = whats;
+        vetor[posicao].proximo = auxiliar;
     }
 }
 
@@ -165,9 +167,23 @@ int ConsultarLinear(Tipo_no[]vetor, int idade)
     }
 }
 
-void AlterarSTratamento(ref Tipo_no[] vetor, int idade)
+void ConsultarEncadeada(Tipo_no[] vetor, int idade, ref Tipo_no anterior, ref Tipo_no atual)
 {
     int posicao = Hash(idade);
+    atual = vetor[posicao];
+    anterior = null;
+    while(atual != null && idade != atual.idade)
+    {
+        anterior = atual;
+        atual = atual.proximo;
+    }
+}
+
+void AlterarSTratamento(ref Tipo_no[] vetor)
+{
+    Console.Write("Digite a chave(idade) que deseja alterar: ");
+    int idade_alterar = (Convert.ToInt32(Console.ReadLine()));
+    int posicao = Hash(idade_alterar);
     if(posicao != -1)
     {
         Console.WriteLine("Dados atuais: ");
@@ -188,9 +204,11 @@ void AlterarSTratamento(ref Tipo_no[] vetor, int idade)
     }   
 }
 
-void AlterarLinear(ref Tipo_no[] vetor, int idade)
+void AlterarLinear(ref Tipo_no[] vetor)
 {
-    int posicao = ConsultarLinear(vetor, idade);
+    Console.Write("Digite a chave(idade) que deseja alterar: ");
+    int idade_alterar = (Convert.ToInt32(Console.ReadLine()));
+    int posicao = ConsultarLinear(vetor, idade_alterar);
     if(posicao != -1)
     {
         Console.WriteLine("Dados atuais: ");
@@ -210,6 +228,35 @@ void AlterarLinear(ref Tipo_no[] vetor, int idade)
     else
     {
         Console.WriteLine("Idade não encontrada!");
+    }
+}
+
+void AlterarEncadeada(ref Tipo_no[] vetor)
+{
+    Tipo_no atual = null;
+    Tipo_no anterior = null;
+    Console.Write("Digite a chave(idade) que deseja alterar: ");
+    int idade_alterar = (Convert.ToInt32(Console.ReadLine()));
+    int posicao = Hash(idade_alterar);
+    if(posicao != -1)
+    {
+        ConsultarEncadeada(vetor, idade_alterar, ref anterior, ref atual);
+        if(atual != null)
+        {
+            Console.WriteLine("Alterando dados: ");
+            vetor[posicao].nome = " ";
+            vetor[posicao].whats = 0;
+            Console.Write("Digite o novo nome: ");
+            vetor[posicao].nome = Console.ReadLine();
+            Console.Write("Digite o novo Whats: ");
+            vetor[posicao].whats = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nDados alterados:");
+            Console.WriteLine($"A chave digitada foi [{vetor[posicao].idade}], e seus novos dados são: nome [{vetor[posicao].nome}], Whats [{vetor[posicao].whats}]");
+        }
+    else
+    {
+        Console.WriteLine("Idade não encontrada!");
+    }
     }
 }
 
@@ -251,6 +298,25 @@ void ExibirLinear(Tipo_no[] vetor)
         Console.WriteLine("Nenhum valor encontrado!");
     }   
 }
+void ExibirEncadeada(Tipo_no[] vetor)
+{
+    Console.WriteLine("\n****************** EXIBIÇÃO DE TODOS OS REGISTROS ******************\n");
+    int posicao = 0;
+    int pos = Hash(vetor[posicao].idade);
+    Tipo_no auxiliar = vetor[pos];
+    if(auxiliar != null)
+    {
+        while(auxiliar != null)
+        {
+            Console.WriteLine($"Para idade: [{auxiliar.idade}], para ela temos os seguintes dados: nome [{auxiliar.nome}] e Whats [{auxiliar.whats}]");
+            auxiliar = auxiliar.proximo;
+        }
+    }
+    else
+    {
+        Console.WriteLine("Não existem valores a serem exibidos [LISTA VAZIA]!\n");
+    }
+}
 
 int Hash(int idade)
 {
@@ -290,4 +356,5 @@ class Tipo_no
     public int idade;
     public string nome;
     public int whats;
+    public Tipo_no proximo;
 }
