@@ -62,9 +62,10 @@ while(true)
     else if(op == 2)
     {
         Console.WriteLine("************************ ALTERAR ************************\n");
-        int op2 = Menu_Tratamento();
+        int op2 = 0;
          while(op2 != 4)
         {
+            op2 = Menu_Tratamento();
             if(op2 == 1)
             {
                 AlterarSTratamento(ref vetor_s_tratamento);
@@ -86,17 +87,18 @@ while(true)
     else if(op == 3)
     {
         Console.WriteLine("************************ EXIBIR ************************\n");
-        int op2 = Menu_Tratamento();
+        int op2 = 0;
          while(op2 != 4)
         {
+            op2 = Menu_Tratamento();
             if(op2 == 1)
             {
-                ExibirSTratamento(vetor_s_tratamento, vetor_s_tratamento[idade].idade);
+                ExibirSTratamento(vetor_s_tratamento);
             }
-            /*else if(op2 == 2)
+            else if(op2 == 2)
             {
                 ExibirLinear(vetor_linear);
-            }*/
+            }
             else if(op2 == 3)
             {
                 ExibirEncadeada(vetor_encadeada);
@@ -150,25 +152,6 @@ void InserirEncadeada(Tipo_no[] vetor, int idade, string nome, int whats)
         }
         vetor[posicao] = no;
     }
-}
-
-int ConsultarSTratamento(Tipo_no[] vetor, int idade)
-{
-    int qtd_verificar = 0;
-    int posicao = Hash(idade);
-    while((vetor[posicao] == null || vetor[posicao].idade != idade) && qtd_verificar < VL)
-    {
-        posicao ++;
-        posicao = posicao % VL;
-    }
-    if(qtd_verificar < VL)
-    {
-        return posicao;
-    }
-    else
-    {
-        return -1;
-    }    
 }
 
 int ConsultarLinear(Tipo_no[]vetor, int idade)
@@ -279,45 +262,46 @@ void AlterarEncadeada(ref Tipo_no[] vetor)
     }
 }
 
-void ExibirSTratamento(Tipo_no[] vetor, int idade) //não para de repetir
+void ExibirSTratamento(Tipo_no[] vetor) 
 {
     int contador = 0;
-    int posicao = Hash(idade);//ConsultarSTratamento(vetor, idade);
-    if(posicao != -1)
+    if(vetor != null && contador < VST)
     {
+        Console.WriteLine("\n****************** EXIBIÇÃO DE TODOS OS REGISTROS ******************\n");
         while(contador < VST)
         {
-            Console.WriteLine("\n****************** EXIBIÇÃO DE TODOS OS REGISTROS ******************\n");
-            Console.WriteLine($"Para idade: [{vetor[posicao].idade}], temos os seguintes dados: Nome [{vetor[posicao].nome}] e Whats [{vetor[posicao].whats}]");
-            contador ++; //com problema aqui
-        }
-    }
-    else
-    {
-        Console.WriteLine("Nenhum valor encontrado!");
-    } // não para de repetir
-}
-
-void ExibirLinear(Tipo_no[] vetor)
-{
-    Console.WriteLine("\n****************** EXIBIÇÃO DE TODOS OS REGISTROS ******************\n");
-    Tipo_no[] auxiliar = vetor;
-    int contador = 0;
-    if(auxiliar != null)
-    {
-        while(auxiliar != null && contador < VL)
-        {
-            int posicao = 0;
-            int idade = vetor[posicao].idade;
-            int pos = Hash(idade);
-            Console.WriteLine($"Para idade: [{auxiliar[pos].idade}], para ela temos os seguintes dados: nome [{auxiliar[pos].nome}] e Whats [{auxiliar[pos].whats}]");
+            if(vetor[contador] != null)
+            {
+                Console.WriteLine($"Para idade: [{vetor[contador].idade}], temos os seguintes dados: Nome [{vetor[contador].nome}] e Whats [{vetor[contador].whats}]");
+            }
             contador ++;
         }
     }
     else
     {
         Console.WriteLine("Nenhum valor encontrado!");
-    }   
+    }
+}
+
+void ExibirLinear(Tipo_no[] vetor)
+{
+    Console.WriteLine("\n****************** EXIBIÇÃO DE TODOS OS REGISTROS ******************\n");
+    int contador = 0;
+    if(vetor != null)
+    {
+        while(contador < VL)
+        {
+            if(vetor[contador] != null)
+            {
+                Console.WriteLine($"Para idade: [{vetor[contador].idade}], temos os seguintes dados: Nome [{vetor[contador].nome}] e Whats [{vetor[contador].whats}]");
+            }
+            contador ++;
+        }
+    }
+    else
+    {
+        Console.WriteLine("Nenhum valor encontrado!");
+    }
 }
 
 void ExibirEncadeada(Tipo_no[] vetor)
@@ -338,7 +322,7 @@ void ExibirEncadeada(Tipo_no[] vetor)
     else
     {
         Console.WriteLine("Não existem valores a serem exibidos [LISTA VAZIA]!\n");
-    }
+    } //fazer igual ex de lista encadeada
 }
 
 int Hash(int idade)
