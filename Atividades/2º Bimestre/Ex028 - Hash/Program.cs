@@ -12,6 +12,7 @@ const int VE = 5;
 Tipo_no[] vetor_linear = new Tipo_no[VL];
 Tipo_no[] vetor_s_tratamento = new Tipo_no[VST];
 Tipo_no[] vetor_encadeada = new Tipo_no[VE];
+int idade = 0;
 
 while(true)
 {
@@ -26,7 +27,7 @@ while(true)
             if(op2 == 1)
             {
                 Console.Write("Digite a idade: ");
-                int idade = Convert.ToInt32(Console.ReadLine());
+                idade = Convert.ToInt32(Console.ReadLine());
                 Console.Write("Digite o nome: ");
                 string nome = Console.ReadLine();
                 Console.Write("Digite o whats: ");
@@ -37,7 +38,7 @@ while(true)
             else if(op2 == 2)
             {
                 Console.Write("Digite a idade: ");
-                int idade = Convert.ToInt32(Console.ReadLine());
+                idade = Convert.ToInt32(Console.ReadLine());
                 Console.Write("Digite o nome: ");
                 string nome = Console.ReadLine();
                 Console.Write("Digite o whats: ");
@@ -48,7 +49,7 @@ while(true)
             else if(op2 == 3)
             {
                 Console.Write("Digite a idade: ");
-                int idade = Convert.ToInt32(Console.ReadLine());
+                idade = Convert.ToInt32(Console.ReadLine());
                 Console.Write("Digite o nome: ");
                 string nome = Console.ReadLine();
                 Console.Write("Digite o whats: ");
@@ -90,12 +91,12 @@ while(true)
         {
             if(op2 == 1)
             {
-                ExibirSTratamento(vetor_s_tratamento);
+                ExibirSTratamento(vetor_s_tratamento, vetor_s_tratamento[idade].idade);
             }
-            else if(op2 == 2)
+            /*else if(op2 == 2)
             {
                 ExibirLinear(vetor_linear);
-            }
+            }*/
             else if(op2 == 3)
             {
                 ExibirEncadeada(vetor_encadeada);
@@ -149,6 +150,25 @@ void InserirEncadeada(Tipo_no[] vetor, int idade, string nome, int whats)
         }
         vetor[posicao] = no;
     }
+}
+
+int ConsultarSTratamento(Tipo_no[] vetor, int idade)
+{
+    int qtd_verificar = 0;
+    int posicao = Hash(idade);
+    while((vetor[posicao] == null || vetor[posicao].idade != idade) && qtd_verificar < VL)
+    {
+        posicao ++;
+        posicao = posicao % VL;
+    }
+    if(qtd_verificar < VL)
+    {
+        return posicao;
+    }
+    else
+    {
+        return -1;
+    }    
 }
 
 int ConsultarLinear(Tipo_no[]vetor, int idade)
@@ -216,17 +236,13 @@ void AlterarLinear(ref Tipo_no[] vetor)
     {
         Console.WriteLine("Dados atuais: ");
         Console.WriteLine($"A chave digitada foi [{vetor_linear[posicao].idade}], para ela temos os seguintes dados: nome [{vetor_linear[posicao].nome}] e Whats [{vetor_linear[posicao].whats}]");
-        Console.Write("Deseja alterar algum dado? Digite [1] Sim ou [2] Não ");
-        int op3 = int.Parse(Console.ReadLine());
-        if(op3 == 1)
-        {
             Console.Write("Digite o novo nome: ");
             vetor[posicao].nome = Console.ReadLine();
             Console.Write("Digite o novo Whats: ");
             vetor[posicao].whats = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("\nDados alterados:");
             Console.WriteLine($"A chave digitada foi [{vetor_linear[posicao].idade}], e seus novos dados são: nome [{vetor_linear[posicao].nome}], Whats [{vetor_linear[posicao].whats}]");
-        }
+        
     }
     else
     {
@@ -263,14 +279,13 @@ void AlterarEncadeada(ref Tipo_no[] vetor)
     }
 }
 
-void ExibirSTratamento(Tipo_no[] vetor)
+void ExibirSTratamento(Tipo_no[] vetor, int idade) //não para de repetir
 {
     int contador = 0;
-    int idade = 0;
-    int posicao = Hash(vetor[idade].idade);
+    int posicao = Hash(idade);//ConsultarSTratamento(vetor, idade);
     if(posicao != -1)
     {
-        while((vetor[posicao ] != null || vetor[posicao].idade == idade) && contador < VST)
+        while(contador < VST)
         {
             Console.WriteLine("\n****************** EXIBIÇÃO DE TODOS OS REGISTROS ******************\n");
             Console.WriteLine($"Para idade: [{vetor[posicao].idade}], temos os seguintes dados: Nome [{vetor[posicao].nome}] e Whats [{vetor[posicao].whats}]");
@@ -287,13 +302,16 @@ void ExibirLinear(Tipo_no[] vetor)
 {
     Console.WriteLine("\n****************** EXIBIÇÃO DE TODOS OS REGISTROS ******************\n");
     Tipo_no[] auxiliar = vetor;
+    int contador = 0;
     if(auxiliar != null)
     {
-        while(auxiliar != null)
+        while(auxiliar != null && contador < VL)
         {
             int posicao = 0;
-            int pos = Hash(vetor[posicao].idade);
+            int idade = vetor[posicao].idade;
+            int pos = Hash(idade);
             Console.WriteLine($"Para idade: [{auxiliar[pos].idade}], para ela temos os seguintes dados: nome [{auxiliar[pos].nome}] e Whats [{auxiliar[pos].whats}]");
+            contador ++;
         }
     }
     else
@@ -306,7 +324,8 @@ void ExibirEncadeada(Tipo_no[] vetor)
 {
     Console.WriteLine("\n****************** EXIBIÇÃO DE TODOS OS REGISTROS ******************\n");
     int posicao = 0;
-    int pos = Hash(vetor[posicao].idade);
+    int idade = vetor[posicao].idade;
+    int pos = Hash(idade);
     Tipo_no auxiliar = vetor[pos];
     if(auxiliar != null)
     {
