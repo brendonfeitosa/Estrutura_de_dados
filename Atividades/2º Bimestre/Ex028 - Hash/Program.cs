@@ -6,8 +6,8 @@ Para alterar solicite a idade (chave) para ser utilizada na busca. Caso encontra
 Para relatar, percorra o vetor do inicio ao fim e exiba todos os registros.*/
 
 Console.Clear();
-const int V = 5;
-Tipo_no[] vetor = new Tipo_no[V];
+const int VL = 5;
+Tipo_no[] vetor_linear = new Tipo_no[VL];
 int qtd_colisoes = 0;
 
 while(true)
@@ -16,7 +16,7 @@ while(true)
     if(op == 1)
     {
         Console.WriteLine("************************ INSERIR ************************\n");
-        int op2 = Menu_Colisoes();
+        int op2 = Menu_Tratamento();
         while(op2 != 4)
         {
             if(op2 == 1)
@@ -30,7 +30,7 @@ while(true)
                 string nome = Console.ReadLine();
                 Console.Write("Digite o whats: ");
                 int whats = Convert.ToInt32(Console.ReadLine());
-                InserirLinear(vetor, idade, nome, whats, ref qtd_colisoes);
+                InserirLinear(vetor_linear, idade, nome, whats, ref qtd_colisoes);
                 Console.WriteLine("");
             }
             else if(op2 == 3)
@@ -42,7 +42,7 @@ while(true)
     else if(op == 2)
     {
         Console.WriteLine("************************ ALTERAR ************************\n");
-        int op2 = Menu_Colisoes();
+        int op2 = Menu_Tratamento();
          while(op2 != 4)
         {
             if(op2 == 1)
@@ -53,16 +53,8 @@ while(true)
             {
                 Console.Write("Digite a chave(idade) que deseja alterar: ");
                 int idade_alterar = (Convert.ToInt32(Console.ReadLine()));
-                ConsultarLinear(vetor, idade_alterar);
-                if(idade_alterar == -1)
-                {
-                    Console.WriteLine("Idade não encontrada!");
-                }
-                else
-                {
-                    Console.WriteLine($"A chave digitada foi [{vetor[idade_alterar].idade}], para ela temos os seguintes dados: nome [{vetor[idade_alterar].nome}] e Whats [{vetor[idade_alterar].whats}]");
-                }
-                Console.WriteLine(""); //fazer a alteração, preciso de uma função especifica
+                AlterarLinear(vetor_linear, ref idade_alterar);
+                Console.WriteLine(""); 
             }
             else if(op2 == 3)
             {
@@ -72,8 +64,8 @@ while(true)
     }
     else if(op == 3)
     {
-        Console.WriteLine("************************ RELATAR COLISÕES ************************\n");
-        int op2 = Menu_Colisoes();
+        Console.WriteLine("************************ RELATAR ************************\n");
+        int op2 = Menu_Tratamento();
          while(op2 != 4)
         {
             if(op2 == 1)
@@ -99,16 +91,13 @@ while(true)
     }
 }
 
-
-
-
 void InserirLinear(Tipo_no[] vetor, int idade, string nome, int whats, ref int qtd_colisoes)
 {
     int posicao = Hash(idade);
     while(vetor[posicao] != null)
     {
         posicao ++;
-        posicao = posicao % V;
+        posicao = posicao % VL;
         qtd_colisoes ++;
     }
     vetor[posicao] = new Tipo_no();
@@ -121,12 +110,12 @@ int ConsultarLinear(Tipo_no[]vetor, int idade)
 {
     int qtd_verificar = 0;
     int posicao = Hash(idade);
-    while((vetor[posicao] == null || vetor[posicao].idade != idade) && qtd_verificar < V)
+    while((vetor[posicao] == null || vetor[posicao].idade != idade) && qtd_verificar < VL)
     {
         posicao ++;
-        posicao = posicao % V;
+        posicao = posicao % VL;
     }
-    if(qtd_verificar < V)
+    if(qtd_verificar < VL)
     {
         return posicao;
     }
@@ -136,15 +125,35 @@ int ConsultarLinear(Tipo_no[]vetor, int idade)
     }
 }
 
-int AlterarLinear(Tipo_no[] vetor, ref int idade)
+void AlterarLinear(Tipo_no[] vetor, ref int idade)
 {
-    int consulta = ConsultarLinear(vetor, idade);
+    int posicao = ConsultarLinear(vetor, idade);
+    if(posicao != -1)
+    {
+        Console.WriteLine("Dados atuais: ");
+        Console.WriteLine($"A chave digitada foi [{vetor_linear[posicao].idade}], para ela temos os seguintes dados: nome [{vetor_linear[posicao].nome}] e Whats [{vetor_linear[posicao].whats}]");
+        Console.Write("Deseja alterar algum dado? Digite [1] Sim ou [2] Não ");
+        int op3 = int.Parse(Console.ReadLine());
+        if(op3 == 1)
+        {
+            Console.Write("Digite o novo nome: ");
+            vetor[posicao].nome = Console.ReadLine();
+            Console.Write("Digite o novo Whats: ");
+            vetor[posicao].whats = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nDados alterados:");
+            Console.WriteLine($"A chave digitada foi [{vetor_linear[posicao].idade}], e seus novos dados são: nome [{vetor_linear[posicao].nome}], Whats [{vetor_linear[posicao].whats}]");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Idade não encontrada!");
+    }
 }
 
 
 int Hash(int idade)
 {
-    return idade % V;
+    return idade % VL;
 }
 
 int Menu_Principal()
@@ -161,7 +170,7 @@ int Menu_Principal()
     return opcao;
 }
 
-int Menu_Colisoes()
+int Menu_Tratamento()
 {
     int opcao = 0;
     Console.WriteLine("---------------------------MENU DE COLISÕES---------------------------\n");    
