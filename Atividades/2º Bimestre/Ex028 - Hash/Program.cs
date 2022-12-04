@@ -19,10 +19,10 @@ while(true)
     int op = Menu_Principal();
     if(op == 1)
     {
-        Console.WriteLine("******************************* INSERIR *****************************\n");
         int op2 = 0;
         while(op2 != 4)
         {
+            Console.WriteLine("\n******************************* INSERINDO *****************************");
             op2 = Menu_Tratamento();
             if(op2 == 1)
             {
@@ -59,12 +59,13 @@ while(true)
             }
         }
     }
+
     else if(op == 2)
     {
-        Console.WriteLine("************************ ALTERAR ************************\n");
         int op2 = 0;
          while(op2 != 4)
         {
+            Console.WriteLine("\n************************ ALTERARANDO ************************");
             op2 = Menu_Tratamento();
             if(op2 == 1)
             {
@@ -84,12 +85,13 @@ while(true)
             }
         }       
     }
+
     else if(op == 3)
     {
-        Console.WriteLine("************************ EXIBIR ************************\n");
         int op2 = 0;
          while(op2 != 4)
         {
+            Console.WriteLine("************************ EXIBINDO ************************\n");
             op2 = Menu_Tratamento();
             if(op2 == 1)
             {
@@ -105,6 +107,7 @@ while(true)
             }
         }       
     }
+
     else if(op == 4)
     {
         Console.WriteLine("Saindo...");
@@ -192,16 +195,16 @@ void AlterarSTratamento(ref Tipo_no[] vetor)
     int posicao = Hash(idade_alterar);
     if(posicao != -1)
     {
-        Console.WriteLine("Dados atuais: ");
+        Console.WriteLine("\nDados atuais!\n");
         Console.WriteLine($"A chave digitada foi [{vetor[posicao].idade}], para ela temos os seguintes dados: Nome [{vetor[posicao].nome}] e Whats [{vetor[posicao].whats}]");
-        Console.WriteLine("\nAlterar dados");
+        Console.WriteLine("\nAlterar dados!");
         vetor[posicao].nome = " ";
         vetor[posicao].whats = 0;
         Console.Write("Digite o novo nome: ");
         vetor[posicao].nome = Console.ReadLine();
         Console.Write("Digite o novo Whats: ");
         vetor[posicao].whats = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("\nDados alterados:");
+        Console.WriteLine("\nDados alterados!");
         Console.WriteLine($"A chave digitada foi [{vetor[posicao].idade}], e seus novos dados são: nome [{vetor[posicao].nome}], Whats [{vetor[posicao].whats}]");
     }
     else
@@ -272,14 +275,14 @@ void ExibirSTratamento(Tipo_no[] vetor)
         {
             if(vetor[contador] != null)
             {
-                Console.WriteLine($"Para idade: [{vetor[contador].idade}], temos os seguintes dados: Nome [{vetor[contador].nome}] e Whats [{vetor[contador].whats}]");
+                Console.WriteLine($"Para idade: [{vetor[contador].idade}], temos os seguintes dados: Nome [{vetor[contador].nome}] e Whats [{vetor[contador].whats}]\n");
             }
             contador ++;
         }
     }
     else
     {
-        Console.WriteLine("Nenhum valor encontrado!");
+        Console.WriteLine("Nenhum valor encontrado!\n");
     }
 }
 
@@ -293,14 +296,14 @@ void ExibirLinear(Tipo_no[] vetor)
         {
             if(vetor[contador] != null)
             {
-                Console.WriteLine($"Para idade: [{vetor[contador].idade}], temos os seguintes dados: Nome [{vetor[contador].nome}] e Whats [{vetor[contador].whats}]");
+                Console.WriteLine($"Para idade: [{vetor[contador].idade}], temos os seguintes dados: Nome [{vetor[contador].nome}] e Whats [{vetor[contador].whats}]\n");
             }
             contador ++;
         }
     }
     else
     {
-        Console.WriteLine("Nenhum valor encontrado!");
+        Console.WriteLine("Nenhum valor encontrado!\n");
     }
 }
 
@@ -320,7 +323,7 @@ void ExibirEncadeada(Tipo_no[] vetor)
     }
     else
     {
-        Console.WriteLine("Nenhum valor encontrado!");
+        Console.WriteLine("Nenhum valor encontrado!\n");
     }
 }
 
@@ -339,14 +342,14 @@ int Menu_Principal()
     Console.WriteLine("[4] Sair!");
     Console.Write("\nDigite a opção desejada: ");
     opcao = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("\n---------------------------------------------------------------------\n");
+    Console.WriteLine("\n---------------------------------------------------------------------");
     return opcao;
 }
 
 int Menu_Tratamento()
 {
     int opcao = 0;
-    Console.WriteLine("---------------------- MENU TIPOS DE TRATAMENTO ---------------------\n");    
+    Console.WriteLine("\n---------------------- MENU TIPOS DE TRATAMENTO ---------------------\n");    
     Console.WriteLine("[1] Sem tratamento de colisão");
     Console.WriteLine("[2] Tratamento de colisão Linear");
     Console.WriteLine("[3] Tratamento de colisão com Lista Encadeada");
